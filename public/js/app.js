@@ -1,1 +1,1 @@
-alert('where?');
+alert('i work');
