@@ -1,5 +1,14 @@
 .cell {
-  width: 1em;
-  height: 1em;
+  width: 16px;
+  height: 16px;
   border: 1px solid black;
+}
+
+.centered {
+  margin: auto;
+
+}
+
+.red {
+  background-color: red;
 }
