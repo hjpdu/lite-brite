@@ -13,13 +13,13 @@
     <div class="row" class ="centered">
       <div class="col-md-3">
         <div class="form-group">
-          <label for="number-of-rows"># of Rows </label>
+          <label for="number-of-rows"># of Row Units </label>
           <input type="text" id="number-of-rows" class = 'form-control'>
         </div>
       </div>
       <div class="col-md-3">
         <div class="form-group" >
-          <label for="number-of-cols"># of Columns</label>
+          <label for="number-of-cols"># of Column Units</label>
           <input type="text" id = 'number-of-cols' class = 'form-control'>
         </div>
       </div>
@@ -30,8 +30,9 @@
       <div class="col-md-6" id = "error-box">
         <p>Please select a size no greater than 50x50!</p>
       </div>
-      <div class="col-md-6" id="colorpicker">
-        <button  class="jscolor {valueElement:null,value:'66ccff'}" style="border:2px solid black">
+      <div class="col-md-6">
+        <button class="jscolor  {onFineChange:'update(this)',valueElement:null, value:'66ccff'}" style="border:2px solid black"
+        id ="color-picker">
           Pick a color
         </button>
       </div>
@@ -40,9 +41,9 @@
     <table id="canvas" class = "centered"></table>
   </div>
   <footer>
-    <script src="jscolor.js"></script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script src= "js/app.js"></script>
+    <script src="js/jscolor.js"></script>
   </footer>
 </body>
 
