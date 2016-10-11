@@ -12,7 +12,11 @@
   // clearGrid();
   // makeGrid(30,30);
 
-
+  function valHandler(){
+   {
+      updateGridButton.attr('disabled', true);
+    }
+  }
   function updateGridSize(){
     clearGrid(); //remove current grid
     //grab number of columns from the input for the new grid
@@ -20,9 +24,14 @@
     //grab number rows from the input for the new grid
     var newRowNumber = parseInt(numberofRowsInput.val());
     //make new grid based on new rows and columns values
-    makeGrid(newRowNumber , newColNumber);
+    if(newRowNumber <= 30 && newColNumber <= 30) {
+      makeGrid(newRowNumber , newColNumber);
+    }else{
+      makeGrid(15,15);
+    }
     $('.cell').on('click', changeColor);
   }
+
   function clearGrid(){
     canvas.empty();
   }
