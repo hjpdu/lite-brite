@@ -36,8 +36,12 @@ p {
 .cell {
   width: 16px;
   height: 16px;
-  border: 1px solid transparent;
+  border: none;
   background-color: black;
+}
+
+.cell:hover {
+  border: 1px solid white;
 }
 
 .centered {
@@ -73,6 +77,21 @@ div .form-group input {
   border-top: 5px solid grey;
 }
 
+#fill-grid-button {
+  border-style:none;
+  font-family: arial;
+  font-weight: bold;
+  position: fixed;
+  font-size: 25px;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+}
+
+#fill-grid-button:hover{
+  border-top: 5px solid grey;
+}
+
 #error-box p {
   margin: 0px;
   margin-bottom: 5px;
@@ -97,7 +116,7 @@ div .form-group input {
   padding: 20px;
 }
 
-#color-picker:hover{
+#color-picker:hover {
   border-top: 5px solid grey;
   }
 

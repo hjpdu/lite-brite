@@ -8,6 +8,7 @@ currentCellColor = '#' + picker.toString();
 (function() {
   var canvas = $('#canvas'); // my placement area - think of paper in drawing
   var updateGridButton = $('#update-grid-button');
+  var fillGridButton = $('#fill-grid-button');
   var numberOfColsInput = $('#number-of-cols');
   var numberofRowsInput = $('#number-of-rows');
   var errorBox = $('#error-box');
@@ -19,11 +20,17 @@ currentCellColor = '#' + picker.toString();
   // cell.css('background-color', black);
   $('.cell').on('click', updateCellColor);
   updateGridButton.on('click', updateGridSize);
+  fillGridButton.on('cick', fillAll);
   errorBox.hide();
+
+  function fillAll() {
+    $('.cell').css('background-color',currentCellColor);
+    console.log(this);
+  }
 
 
   // on click of color picker button push color into the changeColorFunction
-  function updateCellColor(){
+  function updateCellColor() {
     //update the css background-color of whatever element's event caused this function to run
     $(this).css('background-color', currentCellColor);
     $('h1').css('color',currentCellColor);
