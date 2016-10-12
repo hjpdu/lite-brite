@@ -19,9 +19,11 @@ currentCellColor = '#' + picker.toString();
   // for each click of a element containing the cell id, run the updateCellColor
   // cell.css('background-color', black);
   $('.cell').on('click', updateCellColor);
+  $('error-box').css('display', 'none');
   updateGridButton.on('click', updateGridSize);
-  fillGridButton.on('cick', fillAll);
+  fillGridButton.on('click', fillAll);
   errorBox.hide();
+
 
   function fillAll() {
     $('.cell').css('background-color',currentCellColor);
@@ -50,7 +52,7 @@ currentCellColor = '#' + picker.toString();
       errorBox.hide();
     }else {
       makeGrid(25,50);
-      errorBox.show();
+      errorBox.show('slow');
     }
     $('.cell').on('click', updateCellColor);
   }

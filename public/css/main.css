@@ -28,10 +28,12 @@ p {
 
 #number-of-cols {
   border: none;
+  border-radius: none;
 }
 
 #number-of-rows {
   border: none;
+  border-radius: none;
 }
 .cell {
   width: 16px;
@@ -71,6 +73,7 @@ div .form-group input {
   font-weight: bold;
   border-style:none;
   background-color: transparent;
+  border-radius: none;
 }
 
 #update-grid-button:hover {
@@ -79,13 +82,15 @@ div .form-group input {
 
 #fill-grid-button {
   border-style:none;
+  border-radius: none;
   font-family: arial;
   font-weight: bold;
-  position: fixed;
+  /*position: fixed;*/
   font-size: 25px;
   color: white;
   margin: 0px;
   padding: 20px;
+  background-color: transparent;
 }
 
 #fill-grid-button:hover{
