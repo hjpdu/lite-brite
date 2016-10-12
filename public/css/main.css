@@ -1,3 +1,7 @@
+body{
+  background-color: lightgrey;
+}
+
 h1 {
   font-size: 70px;
   font-weight: bolder;
@@ -6,6 +10,7 @@ h1 {
 }
 span {
   font-size: 60%;
+
 }
 
 hr {
@@ -14,8 +19,19 @@ hr {
   margin-bottom: auto;
 }
 
-p{
+p {
   margin: 0px;
+  font-weight:bold;
+  font-family: helvetica;
+  color: gray;
+}
+
+#number-of-cols {
+  border: none;
+}
+
+#number-of-rows {
+  border: none;
 }
 .cell {
   width: 16px;
@@ -25,14 +41,14 @@ p{
 }
 
 .centered {
-  margin: auto;
+  /*margin: auto;*/
 
 }
 
 #main-bar {
   width: 100%;
   height: 5%;
-  background-color: chartreuse;
+  background-color: #92f975;
   margin-bottom: 30px;
 }
 
@@ -45,41 +61,60 @@ div .form-group input {
 }
 
 #update-grid-button {
-  margin-top: 10px;
+  margin:0px;
   padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border-style:none;
+  background-color: transparent;
 }
 
-#error-box {
-  margin: auto;
-  font-size:40px;
+#update-grid-button:hover {
+  border-top: 5px solid grey;
+}
+
+#error-box p {
+  margin: 0px;
+  margin-bottom: 5px;
+  font-size:35px;
   font-weight: bold;
   color: red;
 }
 
-#color-picker{
+#error-box p:hover {
+  color: white;
+}
+
+#color-picker {
+  /*float:right;*/
   border-style:none;
-  /*padding: 25px;*/
   font-family: arial;
   font-weight: bold;
-  border-radius: 5px;
   position: fixed;
-  float: right;
-  height: 5%;
-  float: right;
-  
+  font-size: 25px;
+  color: white;
+  margin: 0px;
+  padding: 20px;
 }
+
+#color-picker:hover{
+  border-top: 5px solid grey;
+  }
 
 #color-picker span {
   color: white;
-  font-size: 25px;
-  float: right;
-  margin: 5px;
+  font-family:helvetica;
+  font-size:inherit;
+  /*padding: 0px;*/
+  /*background-color: black;*/
 }
 
-
-#update-grid-button {
-  font-weight: bold;
-  border-style:none;
-  width: 30%
-  display:inline-block;
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }

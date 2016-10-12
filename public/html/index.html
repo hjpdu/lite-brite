@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row" id= "top-bar">
       <div class="col-md-12">
-        <h1>Lite-Brite.<span>Mine</span></h1>
+        <h1 class ="strokeme">Lite-Brite.<span>Mine</span></h1>
         <hr>
         <p>Enter a # of...</p>
       </div>
@@ -30,21 +30,21 @@
           <input type="text" id = 'number-of-cols' class = 'form-control'>
         </div>
       </div>
-      <div class="col-md-3" >
-        <button id="update-grid-button" class="btn btn-success">Make Grid</button>
-      </div>
       <div class="col-md-3">
-        <button class="jscolor  {onFineChange:'update(this)',valueElement:null,
+        <button id="update-grid-button" class="btn btn-success strokeme">Make Grid</button>
+      </div>
+      <div class="col-md-3 col-md-offset-4">
+        <button class = "jscolor {onFineChange:'update(this)',valueElement:null,
         value:'66ccff'}" id ="color-picker">
-          <span>Pick a color</span>
+          <span class= "strokeme">Pick a color</span>
         </button>
       </div>
+    </div>
     <div class="row">
-      <div class="col-md-6" id = "error-box">
+      <div class="col-md-12" id = "error-box">
         <p>Please select a size no greater than 50x50!</p>
       </div>
 
-    </div>
     </div>
     <table id="canvas" class = "centered"></table>
   </div>
