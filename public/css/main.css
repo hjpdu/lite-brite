@@ -1,7 +1,27 @@
+h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  margin-bottom:0px;
+  font-family: tahoma;
+}
+span {
+  font-size: 60%;
+}
+
+hr {
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: auto;
+}
+
+p{
+  margin: 0px;
+}
 .cell {
   width: 16px;
   height: 16px;
-  border: 1px solid black;
+  border: 1px solid transparent;
+  background-color: black;
 }
 
 .centered {
@@ -9,14 +29,11 @@
 
 }
 
-.red {
-  background-color: red;
-}
-
-.container .row {
+#main-bar {
   width: 100%;
   height: 5%;
   background-color: chartreuse;
+  margin-bottom: 30px;
 }
 
 div .form-group label{
@@ -29,7 +46,7 @@ div .form-group input {
 
 #update-grid-button {
   margin-top: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 #error-box {
@@ -39,4 +56,30 @@ div .form-group input {
   color: red;
 }
 
-#color-picker{}
+#color-picker{
+  border-style:none;
+  /*padding: 25px;*/
+  font-family: arial;
+  font-weight: bold;
+  border-radius: 5px;
+  position: fixed;
+  float: right;
+  height: 5%;
+  float: right;
+  
+}
+
+#color-picker span {
+  color: white;
+  font-size: 25px;
+  float: right;
+  margin: 5px;
+}
+
+
+#update-grid-button {
+  font-weight: bold;
+  border-style:none;
+  width: 30%
+  display:inline-block;
+}
