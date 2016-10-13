@@ -60,7 +60,8 @@ p {
 #main-bar {
   width: 100%;
   height: 5%;
-  background-color: #92f975;
+  /*background-color: #92f975;*/
+  background-color: grey;
   margin-bottom: 30px;
 }
 
