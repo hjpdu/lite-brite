@@ -5,6 +5,7 @@ var currentCellColor = ('#66ccff');
 function update(picker) {
 currentCellColor = '#' + picker.toString();
 }
+
 (function() {
   var canvas = $('#canvas'); // my placement area - think of paper in drawing
   var updateGridButton = $('#update-grid-button');

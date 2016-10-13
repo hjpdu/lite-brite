@@ -27,21 +27,23 @@ p {
 }
 
 #number-of-cols {
-
   border-radius: 0px;
+  color: grey;
 }
 
 #number-of-rows {
-
   border-radius: 0px;
+  color: grey;
 }
 
 #number-of-rows:hover {
   border: 5px solid grey;
+  font-weight: bold;
 }
 
 #number-of-cols:hover {
   border: 5px solid grey;
+  font-weight: bold;
 }
 
 .cell {
@@ -53,11 +55,6 @@ p {
 
 .cell:hover {
   border: 1px solid white;
-}
-
-.centered {
-  /*margin: auto;*/
-
 }
 
 #main-bar {
@@ -148,8 +145,7 @@ div .form-group input {
   /*background-color: black;*/
 }
 
-.strokeme
-{
+.strokeme {
     color: white;
     text-shadow:
     -1px -1px 0 #000,
