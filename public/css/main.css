@@ -27,14 +27,23 @@ p {
 }
 
 #number-of-cols {
-  border: none;
-  border-radius: none;
+
+  border-radius: 0px;
 }
 
 #number-of-rows {
-  border: none;
-  border-radius: none;
+
+  border-radius: 0px;
 }
+
+#number-of-rows:hover {
+  border: 5px solid grey;
+}
+
+#number-of-cols:hover {
+  border: 5px solid grey;
+}
+
 .cell {
   width: 16px;
   height: 16px;
@@ -66,6 +75,10 @@ div .form-group input {
   display: inline;
 }
 
+#canvas:hover{
+  /*padding: 5px;*/
+  border:5px solid grey;
+}
 #update-grid-button {
   margin:0px;
   padding: 20px;
@@ -74,6 +87,7 @@ div .form-group input {
   border-style:none;
   background-color: transparent;
   border-radius: none;
+  position: absolute;
 }
 
 #update-grid-button:hover {
@@ -91,6 +105,7 @@ div .form-group input {
   margin: 0px;
   padding: 20px;
   background-color: transparent;
+  position: absolute;
 }
 
 #fill-grid-button:hover{
@@ -118,7 +133,7 @@ div .form-group input {
   font-size: 25px;
   color: white;
   margin: 0px;
-  padding: 20px;
+  padding: 17px;
 }
 
 #color-picker:hover {

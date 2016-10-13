@@ -19,26 +19,20 @@ currentCellColor = '#' + picker.toString();
   // for each click of a element containing the cell id, run the updateCellColor
   // cell.css('background-color', black);
   $('.cell').on('click', updateCellColor);
-  $('error-box').css('display', 'none');
   updateGridButton.on('click', updateGridSize);
   fillGridButton.on('click', fillAll);
   errorBox.hide();
 
-
   function fillAll() {
-    $('.cell').css('background-color',currentCellColor);
-    console.log(this);
+    $('.cell').css('background-color',currentCellColor).fadeIn(50000);
   }
-
-
-  // on click of color picker button push color into the changeColorFunction
   function updateCellColor() {
+      // on click of color picker button push color into the changeColorFunction
     //update the css background-color of whatever element's event caused this function to run
     $(this).css('background-color', currentCellColor);
     $('h1').css('color',currentCellColor);
     $('#main-bar').css('background-color',currentCellColor);
   }
-
   function updateGridSize(){
 
     clearGrid(); //remove current grid
@@ -72,9 +66,9 @@ currentCellColor = '#' + picker.toString();
       for(var colCount =0; colCount < numberOfCols; colCount += 1){
         var column = $('<td></td>');
         column.addClass('cell');
-        row.append(column);
+        row.append(column).fadeIn(1000);
       }
-      canvas.append(row);
+      canvas.append(row).fadeIn(1000);
     }
   }
 
